@@ -33,6 +33,8 @@ release = '1.0.0'
 extensions = [
     'sphinx.ext.todo',
     'sphinx.ext.githubpages',
+    "sphinx_rtd_theme",
+
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -58,13 +60,21 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 #
 #html_theme = 'alabaster'
 
-pygments_style = 'sphinx'
-html_theme = 'p-greenblue'
-import os
-from PSphinxTheme import utils
+#html_theme = 'p-greenblue'
 
-p, html_theme, needs_sphinx = utils.set_psphinxtheme(html_theme)
-html_theme_path = p
+#html_theme = 'cloud'
+
+import sphinx_rtd_theme
+
+html_theme = "sphinx_rtd_theme"
+
+pygments_style = 'sphinx'
+
+#import os
+#from PSphinxTheme import utils
+#
+#p, html_theme, needs_sphinx = utils.set_psphinxtheme(html_theme)
+#html_theme_path = p
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
