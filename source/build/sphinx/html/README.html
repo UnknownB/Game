@@ -1,0 +1,218 @@
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_TW">
+  <head>
+    <meta charset="utf-8" />
+    <title>P-SphinxTheme &#8212; Game 1.0.0 說明文件</title>
+    <link rel="stylesheet" href="_static/greenblue.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/local_fonts.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <script type="text/javascript" src="_static/jquery.cookie.js"></script>
+    <script type="text/javascript" src="_static/p_sphinx_theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜尋" href="search.html" /> 
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head><body>
+      <div class="relbar-top">
+            
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>瀏覽</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="總索引"
+             accesskey="I">索引</a></li>
+      <li><a href="index.html">Game 1.0.0 說明文件</a> &#187;</li>
+ 
+      </ul>
+    </div>
+      </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="p-sphinxtheme">
+<h1>P-SphinxTheme<a class="headerlink" href="#p-sphinxtheme" title="本標題的永久連結">¶</a></h1>
+<div class="section" id="about">
+<h2>About<a class="headerlink" href="#about" title="本標題的永久連結">¶</a></h2>
+<p>A sphinx theme I use for most projects. Derivative of 「Eli Collins’s cloud_sptheme」.</p>
+<p>The latest documentation can be found online at <a class="reference external" href="http://packages.python.org/PSphinxTheme">http://packages.python.org/PSphinxTheme</a>.</p>
+</div>
+<div class="section" id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="本標題的永久連結">¶</a></h2>
+<ul>
+<li><p>Python 3</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>for python2 look at the original <a class="reference external" href="https://bitbucket.org/ecollins/cloud_sptheme">cloud_sptheme</a> by <strong>Eli Collins</strong></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><a class="reference external" href="http://sphinx-doc.org/">Sphinx</a>  for version see {SOURCE}/requirements.txt</p></li>
+<li><p><a class="reference external" href="https://github.com/LCONF/python_lconf_lexer">python_lconf_lexer</a></p></li>
+</ul>
+</div>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="本標題的永久連結">¶</a></h2>
+<ol class="arabic">
+<li><p>To install from pypi using <code class="docutils literal notranslate"><span class="pre">pip/pip3</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip3 install PSphinxTheme
+</pre></div>
+</div>
+</li>
+<li><p>To install from the source:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ python3 setup.py install
+</pre></div>
+</div>
+</li>
+</ol>
+<div class="section" id="building-the-documentation">
+<h3>Building the Documentation<a class="headerlink" href="#building-the-documentation" title="本標題的永久連結">¶</a></h3>
+<p>If you wish to generate your own copy of the documentation, you will need to:</p>
+<ol class="arabic">
+<li><p>Get the <cite>PSphinxTheme</cite> source.</p></li>
+<li><p>If not already installed - install <a class="reference external" href="http://sphinx-doc.org/">Sphinx</a></p></li>
+<li><p>If not already installed - install <a class="reference external" href="https://github.com/LCONF/python_lconf_lexer">python_lconf_lexer</a></p></li>
+<li><p>From the <cite>PSphinxTheme</cite> source directory, run <code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">setup.py</span> <span class="pre">build_sphinx</span> <span class="pre">-E</span></code>.</p></li>
+<li><p>Once Sphinx is finished, point a web browser to the file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="n">SOURCE</span><span class="p">}</span><span class="o">/</span><span class="n">build</span><span class="o">/</span><span class="n">sphinx</span><span class="o">/</span><span class="n">html</span><span class="o">/</span><span class="n">index</span><span class="o">.</span><span class="n">html</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="online-resources">
+<h2>Online Resources<a class="headerlink" href="#online-resources" title="本標題的永久連結">¶</a></h2>
+<ul class="simple">
+<li><p>Docs:       <a class="reference external" href="http://packages.python.org/PSphinxTheme">http://packages.python.org/PSphinxTheme</a></p></li>
+<li><p>PyPI:       <a class="reference external" href="http://pypi.python.org/pypi/PSphinxTheme">http://pypi.python.org/pypi/PSphinxTheme</a></p></li>
+<li><p>Source:     <a class="reference external" href="https://github.com/peter1000/PSphinxTheme">https://github.com/peter1000/PSphinxTheme</a></p></li>
+</ul>
+<div class="section" id="related-resources">
+<h3>Related Resources<a class="headerlink" href="#related-resources" title="本標題的永久連結">¶</a></h3>
+<ul class="simple">
+<li><p>python_lconf_lexer: <a class="reference external" href="https://github.com/LCONF/python_lconf_lexer">https://github.com/LCONF/python_lconf_lexer</a> a simple pygments lexer for LCONF</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="projects-using-psphinxtheme">
+<h2>Projects using PSphinxTheme<a class="headerlink" href="#projects-using-psphinxtheme" title="本標題的永久連結">¶</a></h2>
+<p>Known <cite>projects</cite> which make use of: <strong>PSphinxTheme</strong></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt><a class="reference external" href="https://github.com/peter1000/PySpeedIT">PySpeedIT</a></dt><dd><p>A collection of: Benchmark-IT, Profile-IT, Line-Memory-Profile-IT, Disassemble-IT.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><a class="reference external" href="https://github.com/peter1000/LCONF">LCONF</a></dt><dd><p>L(ight) CONF(iguration): A light - human-friendly, simple readable data serialization format for dynamic configuration.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><a class="reference external" href="https://github.com/peter1000/JqPyCharts">JqPyCharts</a></dt><dd><p><cite>JqPyCharts</cite> is a selection of: Javascripts / Css for simple charts in python projects.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><a class="reference external" href="https://github.com/peter1000/PyNHEP">PyNHEP</a></dt><dd><p>PyNHEP: The N(utrition) and H(ealthy) E(ating) P(lanner).</p>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<p><cite>PSphinxTheme</cite> is distributed under the terms of the BSD 3-clause license.</p>
+<p>Consult <cite>LICENSE</cite> or <a class="reference external" href="http://opensource.org/licenses/BSD-3-Clause">BSD-3-Clause</a>.</p>
+<p>(c) 2014, <cite>peter1000</cite> <a class="reference external" href="https://github.com/peter1000">https://github.com/peter1000</a>
+All rights reserved.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="sphinxlocaltoc">
+    <h3><a href="index.html">Page contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">P-SphinxTheme</a><ul>
+<li><a class="reference internal" href="#about">About</a></li>
+<li><a class="reference internal" href="#requirements">Requirements</a></li>
+<li><a class="reference internal" href="#installation">Installation</a><ul>
+<li><a class="reference internal" href="#building-the-documentation">Building the Documentation</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#online-resources">Online Resources</a><ul>
+<li><a class="reference internal" href="#related-resources">Related Resources</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#projects-using-psphinxtheme">Projects using PSphinxTheme</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+
+
+  <div role="note" aria-label="source link">
+    <h3>本頁</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/README.rst.txt"
+            rel="nofollow">顯示原始碼</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜尋</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="搜" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+      <div class="relbar-bottom">
+            
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>瀏覽</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="總索引"
+             >索引</a></li>
+      <li><a href="index.html">Game 1.0.0 說明文件</a> &#187;</li>
+ 
+      </ul>
+    </div>
+      </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; 版權所有 2019, BR。
+      使用 <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.0 創建。
+    </div>
+      <!-- PSphinxTheme -->
+  </body>
+</html>
