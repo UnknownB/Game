@@ -1,2 +1,0 @@
-""" PSphinxTheme sphinx extensions
-"""

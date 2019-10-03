@@ -1,67 +1,225 @@
-
-
-
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_TW">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta charset="utf-8" />
-    <title>搜尋 &#8212; Game 1.0.0 說明文件</title>
-    <link rel="stylesheet" href="_static/greenblue.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/local_fonts.css" type="text/css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="_static/language_data.js"></script>
-    <script type="text/javascript" src="_static/translations.js"></script>
-    <script type="text/javascript" src="_static/jquery.cookie.js"></script>
-    <script type="text/javascript" src="_static/p_sphinx_theme.js"></script>
-    <script type="text/javascript" src="_static/searchtools.js"></script>
+    <title>搜尋 &mdash; CrateDB 1.0.0 說明文件</title>
+    
+    <link rel="stylesheet" href="_static/basic.css?ver=1.1" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css?ver=1.1" type="text/css" />
+    <link rel="stylesheet" href="_static/css/normalize.css?ver=1.1" type="text/css" />
+    <link rel="stylesheet" href="_static/css/bootstrap.css?ver=1.1" type="text/css" />
+    <link rel="stylesheet" href="_static/css/components.css?ver=1.1" type="text/css" />
+    <link rel="stylesheet" href="_static/css/crateio.css?ver=1.1" type="text/css" />
+    <link rel="stylesheet" href="_static/css/crateio-rtd.css?ver=1.1" type="text/css" />
+    <link rel="stylesheet" href="_static/css/custom.css?ver=1.1" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+    <script type="text/javascript" src="https://cdn.crate.io/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script type="text/javascript" src="_static/js/modernizr.js?ver=1.1"></script>
+    <script type="text/javascript" src="_static/js/underscore.min.js?ver=1.1"></script>
+    <script type="text/javascript" src="_static/doctools.js?ver=1.1"></script>
+    <script type="text/javascript" src="_static/js/searchtools.js?ver=1.1"></script>
+    <script type="text/javascript" src="_static/js/webflow.js?ver=1.1"></script>
+    <script type="text/javascript" src="_static/js/bootstrap.js?ver=1.1"></script>
+    <script type="text/javascript" src="_static/js/fontawesome.js?ver=1.1"></script>
+    <script type="text/javascript" src="_static/js/custom.js?ver=1.1"></script>
+    <script type="text/javascript" src="_static/js/sticky-sidebar.min.js?ver=1.1"></script>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="搜尋" href="#" />
-  <script type="text/javascript" src="searchindex.js" defer></script>
-   
-            <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="top" title="CrateDB 1.0.0 說明文件" href="index.html" />
+  <script type="text/javascript">
+    jQuery(function() { Search.loadIndex("searchindex.js"); });
+  </script>
 
-  </head><body>
-      <div class="relbar-top">
-            
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>瀏覽</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="總索引"
-             accesskey="I">索引</a></li>
-      <li><a href="index.html">Game 1.0.0 說明文件</a> &#187;</li>
- 
-      </ul>
+  </head>
+  <body>
+  <input type="checkbox" id="mobile-nav-new">
+
+<header class="header-nav">
+  <div class="container">
+    <div class="navbar w-nav" data-animation="default" data-collapse="small" data-contain="1" data-duration="400">
+      <a class="brand w-nav-brand" href="https://crate.io">
+        <img src="_static/images/logo-crate.png" width="217">
+      </a>
+      <nav class="w-nav-menu main-nav" role="navigation">
+        <div class="dropdownBackground">
+          <span class="arrow"></span>
+        </div>
+        <ul id="menu-top-navigation" class="menu">
+          <li class="navlink w-nav-link menu-item menu-item-has-children">
+            <a href="https://crate.io/products/">Products</a>
+            <ul class="sub-menu">
+              <li class="menu-item"><a href="https://crate.io/products/cratedb/">CrateDB</a></li>
+              <li class="menu-item"><a href="https://crate.io/products/cratedb-cloud/">CrateDB Cloud</a></li>
+              <li class="menu-item"><a href="https://crate.io/products/crate-iot-data-platform/">Crate IoT Data Platform</a></li>
+              <li class="menu-item"><a href="https://crate.io/cratedb-comparison/">CrateDB in Comparison</a></li>
+            </ul>
+          </li>
+          <li class="navlink w-nav-link menu-item menu-item-has-children">
+            <a href="https://crate.io/use-cases/">Use Cases</a>
+            <ul class="sub-menu">
+              <li class="menu-item"><a href="https://crate.io/customers/">Customers</a></li>
+              <li class="menu-item"><a href="https://crate.io/use-cases/iot-sensor-data/">IoT &amp; Sensor Data</a></li>
+              <li class="menu-item"><a href="https://crate.io/use-cases/time-series/">Time Series</a></li>
+              <li class="menu-item"><a href="https://crate.io/use-cases/geospatial-analytics/">Geospatial Analytics</a></li>
+              <li class="menu-item"><a href="https://crate.io/use-cases/cyber-security/">Cybersecurity</a></li>
+            </ul>
+          </li>
+          <li class="navlink w-nav-link menu-item menu-item-has-children">
+            <a href="https://crate.io/resources/">Resources</a>
+            <ul class="sub-menu">
+              <li class="menu-item"><a href="https://crate.io/docs/">Documentation</a></li>
+              <li class="menu-item"><a href="https://crate.io/resources/">Resource Library</a></li>
+              <li class="menu-item"><a href="https://crate.io/community/">Community</a></li>
+              <li class="menu-item"><a href="https://crate.io/partner/">Partners</a></li>
+            </ul>
+          </li>
+          <li class="navlink w-nav-link menu-item"><a href="https://crate.io/blog/">Blog</a></li>
+          <li class="btn-link w-nav-link menu-item"><a href="https://crate.io/download/">Get CrateDB</a></li>
+        </ul>
+      </nav>
+
+      <label for="mobile-nav-new" class="fa fa-bars mobile-nav-button"></label>
     </div>
+  </div>
+</header>
+
+  <div class="w-section section">
+    <div class="w-container w-hidden-main margin-bottom-32">
+      <div class="section" style="margin: 0px">
+        <a href="#" id="mobile-menu-toggler" class="w-button">Toggle Doc Menu</a>
       </div>
+    </div>
+    <div class="container" >
+      <div class="row" id="main-content">
+        <div class="col-md-4 col-lg-3" id="sidebar">
+          <aside class="wrapper-navleft  sidebar__inner" ><div role="complementary" class="bs-docs-sidebar hidden-print">
+  <div class="search-link">
+    <a href="#" class="btn btn-primary">Search Documentation</a>
+  </div>
+  <ul class="bs-docs-sidenav bs-sidenav nav" role="complementary">
+
+    
+
+    
+      <ul class="toctree nav nav-list">
+  <li class="navleft-item">CrateDB</li>
+  <ul>
+    
+    <li class="navleft-item"><a href="/docs/crate/getting-started/">Getting Started</a></li>
+    
+    
+    <li class="current">
+      <a class="current-active" href="index.html">Reference</a>
+      
+    </li>
+    
+    
+    <li class="navleft-item"><a href="/docs/crate/guide/">Guide</a></li>
+    
+  </ul>
+
+  <li class="navleft-item">CrateDB Cloud</li>
+  <ul>
+    
+    <li class="navleft-item"><a href="/docs/cloud/getting-started/">Getting Started</a></li>
+    
+    
+    <li class="navleft-item"><a href="/docs/cloud/console/">Console</a></li>
+    
+    
+    <li class="navleft-item"><a href="/docs/cloud/cli/">Croud CLI</a></li>
+    
+    
+  </ul>
+
+  <li class="navleft-item">CrateDB Clients</li>
+  <ul>
+    
+    <li class="navleft-item"><a href="/docs/clients/admin-ui/">CrateDB Admin UI</a></li>
+    
+    
+    <li class="navleft-item"><a href="/docs/clients/crash/">CrateDB Shell</a></li>
+    
+    
+    <li class="navleft-item"><a href="/docs/clients/jdbc/">JDBC</a></li>
+    
+    
+    <li class="navleft-item"><a href="/docs/clients/dbal/">PHP DBAL</a></li>
+    
+    
+    <li class="navleft-item"><a href="/docs/clients/pdo/">PHP PDO</a></li>
+    
+    
+    <li class="navleft-item"><a href="/docs/clients/python/">Python</a></li>
+    
+    
+    <li class="navleft-item"><a href="/docs/clients/npgsql/">.NET Npgsql</a></li>
+    
+  </ul>
+
+  <li class="navleft-item border-top"><a href="https://github.com/crate/crate-sample-apps">Sample Applications</a></li>
+
   
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body" role="main">
+  <li class="navleft-item"><a href="/support/">Support</a></li>
+</ul>
+    
+
+    
+      
+      
+    
+
+    
+    
+
+    
+      <li></li>
+    
+
+  </ul>
+</div>
+            
+          </aside>
+        </div>
+        <div class="col-md-8 col-lg-9">
+          <div class="wrapper-content-right">
+            
             
   <h1 id="search-documentation">搜尋</h1>
-  <div id="fallback" class="admonition warning">
-  <script type="text/javascript">$('#fallback').hide();</script>
-  <p>
-    請啟用 Javascript 以開啟搜尋功能。
-  </p>
-  </div>
+  <noscript>
+    <div id="fallback" class="admonition warning">
+    <p>
+      Please activate JavaScript to enable the search
+      functionality.
+    </p>
+    </div>
+  </noscript>
   <p>
     你可以從這裡搜尋文件。輸入搜尋詞至底下的文字框並點擊「搜尋」。注意搜尋功能會自動尋找滿足所有詞的結果。只滿足少部份搜尋詞的頁面將不予顯示在結果清單中。
   </p>
-  <form action="" method="get">
-    <input type="text" name="q" aria-labelledby="search-documentation" value="" />
-    <input type="submit" value="搜尋" />
-    <span id="search-progress" style="padding-left: 10px"></span>
+
+  <form class="form-search" action="" method="get">
+    <input type="text" name="q" class="input-medium search-query" placeholder="Search documentation...">
+    <button type="submit" class="btn btn-primary">搜尋</button>
+    <!-- <span id="search-progress" style="padding-left: 10px"></span> -->
   </form>
+
   
   <div id="search-results">
   
@@ -70,32 +228,128 @@
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-
-
+    </div>
+  </div><footer class="footer">
+  <div class="w-container">
+    <div class="w-clearfix">
+      <div class="w-row mobileAlign">
+        <div class="w-col w-col-2 footer-menu">
+          <p class="menu-Label">Product</p>
+          <ul class="vertical-menu">
+            <li class="footer-listitem-new"><a href="https://crate.io/products/cratedb/">CrateDB</a></li>
+            <li class="footer-listitem-new"><a href="https://crate.io/products/cratedb-editions/">CrateDB Editions</a></li>
+            <li class="footer-listitem-new"><a href="https://crate.io/products/cratedb-cloud/">CrateDB Cloud</a></li>
+            <li class="footer-listitem-new"><a href="https://crate.io/products/crate-iot-data-platform/">Crate IoT Data Platform</a></li>
+            <li class="footer-listitem-new"><a href="https://crate.io/cratedb-comparison/">CrateDB Comparison</a></li>
+            <li class="footer-listitem-new"><a href="https://crate.io/pricing/">Pricing</a></li>
+            <li class="footer-listitem-new"><a href="https://crate.io/download/">Get CrateDB</a></li>
+          </ul>
+        </div>
+        
+        <div class="w-col w-col-2 footer-menu">
+          <p class="menu-Label">Use Cases</p>
+          <ul class="vertical-menu">
+            <li class="footer-listitem-new"><a href="https://crate.io/customers/">Customers</a></li>
+            <li class="footer-listitem-new"><a href="https://crate.io/use-cases/">Use Cases</a></li>
+            <li class="footer-listitem-new"><a href="https://crate.io/use-cases/iot-sensor-data">IoT & Sensors</a></li>
+            <li class="footer-listitem-new"><a href="https://crate.io/use-cases/time-series/">Time Series</a></li>
+            <li class="footer-listitem-new"><a href="https://crate.io/use-cases/geospatial-analytics/">Geospatial Tracking</a></li>
+            <li class="footer-listitem-new"><a href="https://crate.io/use-cases/cyber-security/">Cybersecurity</a></li>
+          </ul>
+        </div>
+        
+        <div class="w-col w-col-2 footer-menu">
+          <p class="menu-Label">Resources</p>
+          <ul class="vertical-menu">
+            <li class="footer-listitem-new"><a href="https://crate.io/resources/">Resource Library</a></li>
+            <li class="footer-listitem-new"><a href="https://crate.io/blog/">Blog</a></li>
+            <li class="footer-listitem-new"><a href="https://crate.io/events/">Events</a></li>
+            <li class="footer-listitem-new"><a href="https://crate.io/community/">Community</a></li>
+            <li class="footer-listitem-new"><a href="https://crate.io/community/contribute/">Contribute</a></li>
+            <li class="footer-listitem-new"><a target="_blank" rel="noopener noreferrer" href="https://github.com/crate/crate">Github</a></li>
+          </ul>
+        </div>
+        <div class="w-col w-col-2 footer-menu">
+          <p class="menu-Label">Documentation</p>
+          <ul class="vertical-menu">
+            <li class="footer-listitem-new "><a href="https://crate.io/docs/">Get started</a></li>
+            <li class="footer-listitem-new"><a href="https://crate.io/docs/crate/reference/en/latest/">Full References</a></li>
+            <li class="footer-listitem-new "><a href="https://crate.io/docs/crate/guide/en/latest/">User Guide</a></li>
+            <li class="footer-listitem-new"><a href="https://crate.io/support/">Support</a></li>
+            <li class="footer-listitem-new"><a href="https://crate.io/docs/sql-99/en/latest">SQL 99 Docs</a>
+          </ul>
+        </div>
+        <div class="w-col w-col-2 footer-menu">
+          <p class="menu-Label">Company</p>
+          <ul class="vertical-menu">
+            <li class="footer-listitem-new "><a href="https://crate.io/about/">About us</a></li>
+            <li class="footer-listitem-new"><a href="https://crate.io/jobs/">Jobs</a></li>
+            <li class="footer-listitem-new"><a href="https://crate.io/partner/">Partners</a></li>
+            <li class="footer-listitem-new "><a href="https://crate.io/press/">Press</a></li>
+            <li class="footer-listitem-new"><a href="https://crate.io/contact/">Contact</a></li>
+          </ul>
+        </div>
+        <div class="w-col w-col-2">
+          <ul class="footer-list w-list-unstyled" style="margin-top: 0; padding-left: 0;">
+            <div class="mobileHoriztonalMenu">
+              <li class="footer-listitem-new"><a href="https://crate.io/legal/">Legal</a></li>
+              <li class="footer-listitem-new"><a href="https://crate.io/legal/privacy-policy/">Privacy Policy</a></li>
+              <li class="footer-listitem-new"><a href="https://crate.io/legal/imprint/">Imprint</a></li>
+              
+            </div>
+            <li class="footer-listitem link-list">
+              <a class="footer-link-eu w-inline-block" href="/erdf/">
+                <img class="logo-eu" sizes="100px" src="_static/images/logo-eu-optimized-1.jpg" width="101">
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="clearer"></div>
-    </div>
-      <div class="relbar-bottom">
-            
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>瀏覽</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="總索引"
-             >索引</a></li>
-      <li><a href="index.html">Game 1.0.0 說明文件</a> &#187;</li>
- 
-      </ul>
-    </div>
+      <div class="w-row">
+        <a class="brand footer-brand w-inline-block" href="/">
+          <img src="_static/images/logo-crate.png" width="217">
+        </a>
       </div>
-
-    <div class="footer" role="contentinfo">
-        &#169; 版權所有 2019, BR。
-      使用 <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.0 創建。
     </div>
-      <!-- PSphinxTheme -->
+  </div>
+</footer>
+
+  
+
+  <script>
+
+  var sidebar = new StickySidebar('#sidebar', {
+      containerSelector: '#main-content',
+      innerWrapperSelector: '.sidebar__inner',
+      topSpacing: 20,
+      bottomSpacing: 20,
+  });
+
+  // Desktop only
+  if( !$('#mobile-menu-toggler').is(':visible') ) {
+
+  } else {
+
+    $('.wrapper-navleft').hide();
+    $('#mobile-menu-toggler').click(function() {
+      $('.wrapper-navleft').toggle();
+    });
+
+  }
+
+  </script>
+
+  <!-- Segment -->
+  <script>
+    !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","setAnonymousId"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="4.0.0";
+      analytics.load("FToR4cE5lXyQziQirvt0kSnFQj0rAgu9");
+      analytics.setAnonymousId($.cookie('uid'));
+      analytics.page();
+      analytics.track('visited_section_docs', {
+        project: '',
+        version: ''
+      });
+    }}();
+  </script>
   </body>
 </html>
